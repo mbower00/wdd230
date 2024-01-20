@@ -1,0 +1,26 @@
+@media (min-width: 588px) {
+  h1 {
+    font-size: xx-large;
+  }
+  .card-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .learning-activities-container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .profile-name {
+    font-size: 75px;
+  }
+
+  .navigation {
+    flex-direction: row;
+  }
+  .nav-link {
+    padding: 20px;
+  }
+  .navigation li {
+    width: 100%;
+  }
+}

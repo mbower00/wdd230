@@ -11,25 +11,57 @@
     />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
-    <script defer src="scripts/getDates.js  "></script>
   </head>
+
   <body>
     <header>
-      <span>
+      <span class="profile-info">
         <img
           class="profile-picture"
-          src="images/"
+          src="images/profile.jpg"
           alt="Photo of Mitchell Bower"
-        />Mitchell Bower
+          height="75"
+          width="75"
+        /><span class="profile-name"> Mitchell Bower </span>
       </span>
     </header>
     <nav>
-      <a href="" class="nav-link">Home</a>
-      <a href="" class="nav-link">Chamber</a>
-      <a href="" class="nav-link">Site Plan</a>
-      <a href="" class="nav-link">Form</a>
+      <ul class="navigation">
+        <li><a href="" class="nav-link here">Home</a></li>
+        <li><a href="" class="nav-link">Chamber</a></li>
+        <li><a href="" class="nav-link">Site Plan</a></li>
+        <li><a href="" class="nav-link">Form</a></li>
+      </ul>
     </nav>
-    <main></main>
-    <footer></footer>
+    <main>
+      <h1>WDD 230: Web Frontend Development</h1>
+      <div class="card-grid">
+        <section class="card learning-activities-container">
+          <h2>Learning Activities</h2>
+          <ul>
+            <li>Week 01:<a href=""></a>|<a href=""></a>|<a href=""></a></li>
+            <li>Week 02:</li>
+            <li>Week 03:</li>
+            <li>Week 04:</li>
+            <li>Week 05:</li>
+            <li>Week 06:</li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2>Information</h2>
+          <p class="information-piece">Rexburg, Idaho</p>
+          <p class="information-piece">❄ -1&deg;F - Snowing</p>
+          <p class="information-piece">Page Visits : 42</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy;<span id="current-year-copyright"></span> | Mitchell Bower |
+        United States of America
+      </p>
+      <p id="lastModified"></p>
+    </footer>
   </body>
+  <script src="scripts/getDates.js"></script>
 </html>
