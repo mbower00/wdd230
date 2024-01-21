@@ -36,6 +36,7 @@ h1 {
 footer {
     background-color: var(--grey);
     padding: 10px;
+    color: var(--textLight);
 }
 footer > * {
     text-align: center;
