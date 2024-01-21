@@ -1,0 +1,130 @@
+/* copied from fonts.google.com */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Yeseva+One&display=swap");
+
+body {
+  /* color scheme (coolors.co) */
+  --blue: #083d77;
+  --yellow: #f4d35e;
+  --grey: #6d7278;
+  --text: #0e0f0f;
+  --textLight: #f6f7f7;
+  --white: white;
+
+  color: var(--text);
+  background-color: var(--white);
+  margin: 0;
+  /* copied from fonts.google.com */
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+h2 {
+  /* copied from fonts.google.com */
+  font-family: "Yeseva One", serif;
+}
+header {
+    background-color: var(--blue);
+    padding: 30px;
+}
+header h1 {
+    color: var(--textLight);
+    text-align: center;
+    margin: 0;
+}
+h1 {
+    color: var(--blue);
+}
+footer {
+    background-color: var(--grey);
+    padding: 10px;
+}
+footer > * {
+    text-align: center;
+}
+
+main {
+    width: 90vw;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    background-color: var(--blue);
+    color: var(--textLight);
+    border-radius: 5px;
+    /* copied from fonts.google.com */
+    font-family: "Montserrat", sans-serif;
+}
+.yeseva {
+  /* copied from fonts.google.com */
+  font-family: "Yeseva One", serif;
+}
+
+.grided {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.centered {
+    text-align: center;
+}
+.bolded {
+
+    font-weight: 700;
+}
+
+.card {
+    border: var(--grey) 2px solid;
+    border-radius: 5px;
+}
+.card h2 {
+  background-color: var(--grey);
+  color: var(--textLight);
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+.card div {
+  padding: 10px;
+}
+.colorSection {
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+.wireframe {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.color {
+  border: var(--grey) 5px dotted;
+  height: 10px;
+  width: 10px;
+  margin: 10px auto;
+}
+
+.blue {
+  background-color: var(--blue);
+}
+.yellow {
+  background-color: var(--yellow);
+}
+.grey {
+  background-color: var(--grey);
+}
+.text {
+  background-color: var(--text);
+}
+.textLight {
+  background-color: var(--textLight);
+}
+.white {
+  background-color: var(--white);
+}
+.bottom-border {
+  padding-bottom: 10px;
+  border-bottom: var(--yellow) 2px solid;
+}
