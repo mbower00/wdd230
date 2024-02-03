@@ -17,6 +17,16 @@ body {
   --dark: #191919;
   --light: #3e3e3e;
   --text: #d0d0d0;
+
+  --darkNoChange: #191919;
+  --lightNoChange: #3e3e3e;
+  --textNoChange: #d0d0d0;
+}
+
+body.light {
+  --dark: #fff;
+  --light: #b1b1b1;
+  --text: #191919;
 }
 
 h1,
@@ -49,8 +59,8 @@ footer p {
 
 header {
   background-color: var(--yellow);
-  padding: 15px;
-  color: var(--dark);
+  padding: 15px 25px;
+  color: var(--darkNoChange);
 }
 ul {
   list-style-type: none;
@@ -79,7 +89,7 @@ ul {
 
 .profile-picture {
   border-radius: 100%;
-  border: 5px var(--dark) solid;
+  border: 5px var(--darkNoChange) solid;
 }
 
 .card {
@@ -97,8 +107,12 @@ ul {
   text-align: center;
 }
 
-.navigation {
+.navigation.open {
   display: flex;
+}
+
+.navigation {
+  display: none;
   flex-direction: column;
   background-color: var(--light);
   padding: 0;
@@ -124,4 +138,24 @@ ul {
 /* ID */
 #lastModified {
   font-size: small;
+}
+
+#hamburger {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--darkNoChange);
+  font-size: xx-large;
+  position: absolute;
+  top: 0px;
+  right: 5px; 
+}
+
+#lightToggle {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--darkNoChange);
+  font-size: xx-large;
+  position: absolute;
+  top: 0px;
+  left: 5px;
 }

@@ -23,4 +23,12 @@
   .navigation li {
     width: 100%;
   }
+
+  #hamburger {
+    display: none;
+  }
+
+  .navigation.open, .navigation{
+    display: flex;
+  }
 }
