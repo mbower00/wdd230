@@ -148,6 +148,7 @@ ul {
   position: absolute;
   top: 0px;
   right: 5px; 
+  cursor: pointer;
 }
 
 #lightToggle {
@@ -158,4 +159,5 @@ ul {
   position: absolute;
   top: 0px;
   left: 5px;
+  cursor: pointer;
 }
