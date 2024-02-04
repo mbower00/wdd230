@@ -33,6 +33,12 @@ h2 {
 h1 {
     color: var(--blue);
 }
+h3 {
+    font-size: medium;
+}
+h2 {
+    font-size: large;
+}
 button {
     /* copied from fonts.google.com from site plan*/
     font-family: "Montserrat", sans-serif;
@@ -184,7 +190,7 @@ footer{
     height: var(--logo-size);
 }
 .weather-icon{
-    font-size: 75px;
+    font-size: var(--logo-size);
 }
 .weather-info{
     text-align: center;

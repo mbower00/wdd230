@@ -6,6 +6,13 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         width: 70vw;
     }
+    
+    h3 {
+        font-size: larger;
+    }
+    h2 {
+        font-size: x-large;
+    }
     .header-flex .flex-container h1 {
         font-size: xx-large;
     }
