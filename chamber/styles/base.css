@@ -1,0 +1,193 @@
+/* copied from fonts.google.com from site plan */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Yeseva+One&display=swap");
+
+/** ELEMENTS  */
+
+body {
+    /* color scheme (coolors.co) from site plan */
+    --blue: #083d77;
+    --yellow: #f4d35e;
+    --grey: #6d7278;
+    --text: #0e0f0f;
+    --textLight: #f6f7f7;
+    --white: white;
+
+    margin: 0;
+
+    /* from site plan */
+    color: var(--text);
+
+  
+    /* copied from fonts.google.com from site plan */
+    font-family: "Montserrat", sans-serif;
+}
+
+/* From site plan*/
+h1,
+h2 {
+  /* copied from fonts.google.com */
+  font-family: "Yeseva One", serif;
+}
+h1 {
+    color: var(--blue);
+}
+button {
+    /* copied from fonts.google.com from site plan*/
+    font-family: "Montserrat", sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--textLight);
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    border: var(--blue) 1px solid;
+}
+nav a:hover {
+    border-bottom: var(--textLight) 1px dashed;
+}
+nav a:active, nav a.here  {
+    border-bottom: var(--textLight) 1px solid;
+}
+main {
+    width: 90vw;
+    gap: 30px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+footer{
+    padding: 15px;
+    background-color: var(--grey);
+    color: var(--textLight);
+    text-align: center;
+    margin: 0;
+}
+/** CLASSES */
+
+/*! this order matters! */
+.flex-container.spotlight {
+    display: none;
+}
+.flex-container.shown{
+    display: flex;
+}
+
+.spotlight-nav {
+    padding-top: 15px;
+}
+.event-container .flex-container{
+    border-bottom: var(--yellow) 2px solid;
+    padding: 15px 0;
+}
+.event-container{
+    padding: 0 15px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.spotlight-img {
+    margin-left: 15px;
+    /* border: var(--grey) 4px solid; */
+    box-shadow: rgba(0, 0, 0, .8) 2px 2px 8px;
+}
+.business-info{
+    padding: 15px
+}
+.visit-link {
+    display: block;
+    width: min-content;
+    margin: 0 auto;
+}
+.color-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--textLight);
+    background-color: var(--blue);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card {
+    border: var(--blue) 2px solid;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    height: min-content;
+}
+.card h2 {
+    background-color: var(--blue);
+    color: var(--textLight);
+    margin: 0 0 15px 0;
+    padding: 15px;
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.flex-container.center{
+    justify-content: center;
+}
+nav.flex-container {
+    margin-left: auto;
+}
+.header-flex{
+    background-color: var(--blue);
+    display: flex;
+    gap: 15px;
+    padding: 15px 30px;
+    align-items: center;
+}
+.header-flex h1 {
+    color: var(--textLight);
+}
+.business-logo {
+    border-radius: 100%;
+}
+.weather-icon{
+    font-size: 100px;
+}
+.weather-info{
+    text-align: center;
+}
+/** IDS */
+
+#logo {
+    border-radius: 100%;
+    border: var(--textLight) 4px solid;
+}
+#hero {
+    width: 100%;
+}
+#hero-text {
+    left: 19vw;
+    margin-top: 5vw;
+    position: absolute;
+    width: 20vw;
+}
+#hero-text h1 {
+    font-size: 5vw;
+    margin: 0;
+}
+#hero-action {
+    position: absolute;
+    text-decoration: none;
+    right: 20vw;
+    margin-top: 10vw;
+    color: var(--textLight);
+    font-size: 5vw;
+    background-color: var(--blue);
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    /* copied from fonts.google.com from site plan */
+    font-family: "Yeseva One", serif;
+    border: var(--blue) 10px solid;
+}
+#business-logos {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    width: 60vw;
+    margin: 0 auto 30px auto;
+}

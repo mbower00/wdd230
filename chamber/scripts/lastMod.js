@@ -1,0 +1,1 @@
+document.getElementById("last-mod-val").innerHTML = document.lastModified

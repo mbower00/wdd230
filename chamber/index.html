@@ -19,12 +19,140 @@
       content="https://mbower00.github.io/wdd230/chamber/hero.jpg"
     >
     <link rel="icon" href="favicon.ico" >
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/larger.css" >
     <title>Elgin Chamber of Commerce</title>
   </head>
   <body>
-    <header><nav></nav></header>
+    <header>
+        <div class="header-flex">
+            <div class="flex-container">
+                <img id="logo" src="images/sc.png" width="50" height="50" alt="South Carolina Palmetto Icon">
+                <h1>Elgin Chamber of Commerce</h1>
+            </div>
+            <nav class="flex-container">
+                <a class="here" href="index.html">Home</a>
+                <a href="#">Discover</a>
+                <a href="#">Directory</a>
+                <a href="#">Join</a>
+            </nav>
+        </div>
+    </header>
+    <div id="hero-container">
+        <div id="hero-text">
+            <h1>Grow with us today!</h1>
+        </div>
+        <a id="hero-action" href="#">Join</a>
+        <img id="hero" src="images/hero.jpg" alt="U.S.A. and South Carolina Flag">
+    </div>
+    <main>
+        <section class="card">
+            <h2>Upcoming Events</h2>
+            <div class="event-container">
+                <div class="flex-container">
+                    <img class="business-logo" src="images/sc.png" width="50" height="50" alt="South Carolina Palmetto Icon">
+                    <h3>Weekly Chamber Meeting</h3>
+                    <p>Town Hall</p>
+                    <p>02/04/2024 3:20</p>
+                </div>
+                <div class="flex-container">
+                    <img class="business-logo" src="images/lawlogo.jpg" width="50" height="50" alt="logo of a law firm">
+                    <h3>Meet Our New Attorney!</h3>
+                    <p>M&M&M Law Firm</p>
+                    <p>02/05/2024 7:20</p>
+                </div>
+                <div class="flex-container">
+                    <img class="business-logo" src="images/sc.png" width="50" height="50" alt="South Carolina Palmetto Icon">
+                    <h3>Chamber Potluck Dinner</h3>
+                    <p>Town Hall</p>
+                    <p>02/06/2024 15:20</p>
+                </div>
+                <div class="flex-container">
+                    <img class="business-logo" src="images/pizzalogo.jpg" width="50" height="50" alt="logo of a pizza restaurant">
+                    <h3>Free Sample Day!</h3>
+                    <p>Joe's Pizzas</p>
+                    <p>02/07/2024 9:20</p>
+                </div>
+                <div class="flex-container">
+                    <img class="business-logo" src="images/mexlogo.jpg" width="50" height="50" alt="logo of mexican restaurant">
+                    <h3>Free Chip Day!</h3>
+                    <p>Juan's Mexican Restaurant</p>
+                    <p>02/08/2024 3:20</p>
+                </div>
+                <div class="flex-container">
+                    <img class="business-logo" src="images/sc.png" width="50" height="50" alt="South Carolina Palmetto Icon">
+                    <h3>Family Meet-And-Greet</h3>
+                    <p>Town Hall</p>
+                    <p>02/09/2024 19:20</p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Business Spotlight</h2>
+            <div id="spotlight-container">
+                <div class="flex-container spotlight shown">
+                    <img class="spotlight-img" width="200" height="200" src="images/mex.jpg" alt="mexican food">
+                    <div class="business-info">
+                        <div class="spotlight-title flex-container">
+                            <img class="business-logo" width="75" height="75" src="images/mexlogo.jpg" alt="logo of a mexican restaurant">
+                            <h3>Juan's Mexican Restaurant</h3>
+                        </div>
+                        <p>Hola! This mexican restaurant is sure to be your new favorite here in Elgin! With Chef Juan in charge, we are sure that you will leave happy!</p>
+                        <a href="#" class="visit-link color-link">Visit</a>
+                    </div>
+                </div>
+                <div class="flex-container spotlight">
+                    <img class="spotlight-img" width="200" height="200" src="images/law.jpg" alt="books">
+                    <div class="business-info">
+                        <div class="spotlight-title flex-container">
+                            <img class="business-logo" width="75" height="75" src="images/lawlogo.jpg" alt="logo for a law firm">
+                            <h3>Mike, Mike, and Mike Law Firm</h3>
+                        </div>
+                        <p>So you found yourself in some trouble? The Mikes can help you get treated fairly in court! With 30 years of experience, we are sure to give you the service you need.</p>
+                        <a href="#" class="visit-link color-link">Visit</a>
+                    </div>
+                </div>
+                <div class="flex-container spotlight">
+                    <img class="spotlight-img" width="200" height="200" src="images/pizza.jpg" alt="pizza">
+                    <div class="business-info">
+                        <div class="spotlight-title flex-container">
+                            <img class="business-logo" width="75" height="75" src="images/pizzalogo.jpg" alt="logo of a pizza restaurant">
+                            <h3>Joe's Pizzas</h3>
+                        </div>
+                        <p>Hello! This pizza shop is sure to be your next favorite. Voted best family restaurant in Elgin, we always have something for anyone!</p>
+                        <a href="#" class="visit-link color-link">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-container center spotlight-nav">
+                <a id="back-spotlight" class="color-link">&#9668;</a>
+                <a id="forward-spotlight" class="color-link">&#9658;</a>
+            </div>
 
-    <main></main>
-    <footer></footer>
+        </section>
+        <section class="card">
+            <h2>Weather</h2>
+            <div class="flex-container center">
+                <span class="weather-icon">🌞</span>
+                <div class="weather-info">
+                    <h3>Elgin, SC</h3>
+                    <p>75&deg;F</p>
+                    <p>Sunny and Happy!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="business-logos">
+        <img class="business-logo" width="75" height="75" src="images/mexlogo.jpg" alt="logo of a mexican restaurant">
+        <img class="business-logo" width="75" height="75" src="images/lawlogo.jpg" alt="logo of a law firm">
+        <img class="business-logo" width="75" height="75" src="images/pizzalogo.jpg" alt="logo of a pizza restaurant">
+    </div>
+    <footer>
+        <p><strong>Contact us:</strong> fakeemail@email.com <strong>or</strong> (123) 456-7890</p>
+        <p>Mitchell Bower | WDD 230 Web Frontend Development I</p>
+        <p>Last Modification: <span id="last-mod-val"></span></p>
+    </footer>
+    <script src="scripts/lastMod.js"></script>
+    <script src="scripts/changeSpotlight.js"></script>
   </body>
 </html>
