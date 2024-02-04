@@ -223,6 +223,20 @@ footer{
     font-family: "Yeseva One", serif;
     border: var(--blue) 10px solid;
 }
+#hero-action:hover {
+    animation: wobble .3s ease;
+}
+@keyframes wobble {
+    0%{
+        rotate: 0deg;
+    }
+    50% {
+        rotate: -10deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
 #business-logos {
     display: flex;
     justify-content: center;
