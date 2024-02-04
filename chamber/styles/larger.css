@@ -4,14 +4,15 @@
     }
     main {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        width: 70vw;
+        width: 50vw;
+        min-width: 750px;
     }
     
     h3 {
-        font-size: larger;
+        font-size: x-large;
     }
     h2 {
-        font-size: x-large;
+        font-size: xx-large;
     }
     .header-flex .flex-container h1 {
         font-size: xx-large;
