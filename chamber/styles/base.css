@@ -20,6 +20,8 @@ body {
   
     /* copied from fonts.google.com from site plan */
     font-family: "Montserrat", sans-serif;
+
+    --logo-size: 50px;
 }
 
 /* From site plan*/
@@ -42,6 +44,7 @@ nav a {
     padding-bottom: 5px;
     box-sizing: border-box;
     border: var(--blue) 1px solid;
+    font-size: large;
 }
 nav a:hover {
     border-bottom: var(--textLight) 1px dashed;
@@ -49,12 +52,20 @@ nav a:hover {
 nav a:active, nav a.here  {
     border-bottom: var(--textLight) 1px solid;
 }
+nav.flex-container {
+    display: none;
+    flex-direction: column;
+}
+nav.flex-container.open {
+    display: flex;
+}
+
 main {
     width: 90vw;
     gap: 30px;
-    margin: 30px auto;
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    margin: 30px auto;
 }
 footer{
     padding: 15px;
@@ -68,13 +79,22 @@ footer{
 /*! this order matters! */
 .flex-container.spotlight {
     display: none;
+    padding: 0 15px;
 }
 .flex-container.shown{
     display: flex;
+    flex-direction: column;
+}
+.spotlight-title {
+    justify-content: center;
 }
 
 .spotlight-nav {
     padding-top: 15px;
+}
+.spotlight-img {
+    /* border: var(--grey) 4px solid; */
+    box-shadow: rgba(0, 0, 0, .8) 2px 2px 8px;
 }
 .event-container .flex-container{
     border-bottom: var(--yellow) 2px solid;
@@ -85,10 +105,9 @@ footer{
     max-height: 300px;
     overflow-y: scroll;
 }
-.spotlight-img {
-    margin-left: 15px;
-    /* border: var(--grey) 4px solid; */
-    box-shadow: rgba(0, 0, 0, .8) 2px 2px 8px;
+.event-container .business-logo{
+    width: calc(var(--logo-size) - 15px);
+    height: calc(var(--logo-size) - 15px);
 }
 .business-info{
     padding: 15px
@@ -108,12 +127,15 @@ footer{
     cursor: pointer;
 }
 .card {
-    border: var(--blue) 2px solid;
+    box-shadow: rgba(0, 0, 0, .6) 2px 2px 10px;
+    /* border: var(--blue) 2px solid; */
     border-radius: 5px;
     padding-bottom: 15px;
     height: min-content;
 }
 .card h2 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     background-color: var(--blue);
     color: var(--textLight);
     margin: 0 0 15px 0;
@@ -125,11 +147,19 @@ footer{
     align-items: center;
     gap: 15px;
 }
+.simple-flex{
+    display: flex;
+    gap: 15px;
+}
+.simple-flex p {
+    margin: 0;
+}
+.event-title {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
 .flex-container.center{
     justify-content: center;
-}
-nav.flex-container {
-    margin-left: auto;
 }
 .header-flex{
     background-color: var(--blue);
@@ -137,15 +167,24 @@ nav.flex-container {
     gap: 15px;
     padding: 15px 30px;
     align-items: center;
+    flex-direction: column;
+}
+.header-flex .flex-container h1 {
+    font-size: medium;
+}
+.header-flex nav {
+    /* justify-self: center; */
 }
 .header-flex h1 {
     color: var(--textLight);
 }
 .business-logo {
     border-radius: 100%;
+    width: var(--logo-size);
+    height: var(--logo-size);
 }
 .weather-icon{
-    font-size: 100px;
+    font-size: 75px;
 }
 .weather-info{
     text-align: center;
@@ -161,7 +200,7 @@ nav.flex-container {
 }
 #hero-text {
     left: 19vw;
-    margin-top: 5vw;
+    margin-top: 4%;
     position: absolute;
     width: 20vw;
 }
@@ -173,11 +212,11 @@ nav.flex-container {
     position: absolute;
     text-decoration: none;
     right: 20vw;
-    margin-top: 10vw;
+    margin-top: 8%;
     color: var(--textLight);
     font-size: 5vw;
     background-color: var(--blue);
-    padding: 15px;
+    padding: 1vw;
     border-radius: 20px;
     cursor: pointer;
     /* copied from fonts.google.com from site plan */
@@ -190,4 +229,14 @@ nav.flex-container {
     gap: 10vw;
     width: 60vw;
     margin: 0 auto 30px auto;
+}
+
+#hamburger {
+    border: none;
+    background-color: inherit;
+    font-size: 30px;
+    color: var(--textLight);
+    position: absolute;
+    top: 0;
+    right: 5px;
 }

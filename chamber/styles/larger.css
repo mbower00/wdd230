@@ -1,0 +1,41 @@
+@media (min-width: 850px){
+    body {
+        --logo-size: 75px;
+    }
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 70vw;
+    }
+    .header-flex .flex-container h1 {
+        font-size: xx-large;
+    }
+    .flex-container.shown{
+        flex-direction: row;
+    }
+    .spotlight-title {
+        justify-content: left;
+    }
+    .header-flex{
+        flex-direction: row;
+    }
+    nav.flex-container {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+    }
+    #spotlight-card {
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+    #events-card {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    #weather-card {
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+    #hamburger {
+        display: none;
+    }
+}
