@@ -4,6 +4,8 @@ Below you will find information about the project
 ## PHOTO CITATIONS
 - hero.jpg
     - https://unsplash.com/photos/the-american-flag-is-flying-high-in-the-sky-YEIMrmUy_Z8
+- hero_mobile.jpg
+    - https://unsplash.com/photos/the-american-flag-is-flying-high-in-the-sky-YEIMrmUy_Z8
 - lawlogo
     - https://www.bing.com/images/create/
 - mexlogo
