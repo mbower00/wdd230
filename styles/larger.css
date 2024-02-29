@@ -2,6 +2,10 @@
   h1 {
     font-size: xx-large;
   }
+
+  main {
+  max-width: 960px;
+  }
   .card-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
