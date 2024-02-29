@@ -95,6 +95,9 @@ footer{
     justify-content: center;
 }
 
+.header-flex a {
+    text-decoration: none;
+}
 .spotlight-nav {
     padding-top: 15px;
 }
