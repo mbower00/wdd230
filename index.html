@@ -16,7 +16,7 @@
     <meta property="og:title" content="Mitchell Bower - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mbower00.github.io/wdd230/">
-    <meta property="og:image" content="https://mbower00.github.io/wdd230/images/south.jpg">
+    <meta property="og:image" content="https://mbower00.github.io/wdd230/images/south.webp">
   </head>
 
   <body>
@@ -24,7 +24,7 @@
       <span class="profile-info">
         <img
           class="profile-picture"
-          src="images/profile.jpg"
+          src="images/profile.webp"
           alt="Photo of Mitchell Bower"
           height="75"
           width="75"
@@ -42,7 +42,13 @@
       </ul>
     </nav>
     <main>
-      <img src="#" alt="#">
+      <div id="picture-container">
+        <div id="hero-text">Snowflake Arizona Temple</div>
+        <picture>
+          <source srcset="images/temple-hero-large.webp" media="(min-width: 588px)">
+          <img src="images/temple-hero-small.webp" alt="Snowflake, AZ Temple">
+        </picture>
+      </div>
       <h1>WDD 230: Web Frontend Development</h1>
       <div class="card-grid">
         <section class="card learning-activities-container">
@@ -60,9 +66,11 @@
           <h2>Information</h2>
           <p class="information-piece">Rexburg, Idaho</p>
           <p class="information-piece">❄ -1&deg;F - Snowing</p>
-          <p class="information-piece">Page Visits : 42</p>
+          <p class="information-piece">Page Visits : <span id="visit-display"></span></p>
         </section>
       </div>
+      <!-- iframe from google.com/maps (some adjustments made)-->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26408.491524183002!2d-80.81614807746162!3d34.1703467791761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8ad2b8e3481d3%3A0x77e66b618a676aa3!2sElgin%2C%20SC!5e0!3m2!1sen!2sus!4v1710199246314!5m2!1sen!2sus" width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="elgin-map"></iframe>
     </main>
     <footer>
       <p>
@@ -72,6 +80,7 @@
       <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/getVisits.js"></script>
     <script src="scripts/toggleNav.js"></script>
     <script src="scripts/toggleLight.js"></script>
   </body>

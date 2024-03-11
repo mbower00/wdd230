@@ -29,6 +29,11 @@ body.light {
   --text: #191919;
 }
 
+picture img {
+  width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -42,6 +47,7 @@ h6 {
 main {
   margin: 0 auto;
   width: 80vw;
+  max-width: 400px;
 }
 
 h1 {
@@ -160,4 +166,24 @@ ul {
   top: 0px;
   left: 5px;
   cursor: pointer;
+}
+
+#picture-container {
+  position: relative;
+  margin-top: 30px;
+}
+
+#hero-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: small;
+  padding: 10px;
+  background-color: rgba(1, 1, 1, .8);
+}
+
+#elgin-map {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
 }

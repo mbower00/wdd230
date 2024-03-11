@@ -27,12 +27,18 @@
   .navigation li {
     width: 100%;
   }
+  .navigation.open, .navigation{
+    display: flex;
+  }
 
   #hamburger {
     display: none;
   }
-
-  .navigation.open, .navigation{
-    display: flex;
+  #hero-text {
+    font-size: x-large;
+    top: 20px;
+    left: 20px;
+    padding: 15px;
   }
+
 }
