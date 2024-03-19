@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="This is the home for the Elgin Chamber of Commerce site."
+    >
+    <meta name="author" content="Mitchell Bower" >
+    <meta property="og:title" content="Elgin Chamber of Commerce" >
+    <meta property="og:type" content="website" >
+    <meta
+      property="og:url"
+      content="https://mbower00.github.io/wdd230/chamber"
+    >
+    <meta
+      property="og:image"
+      content="https://mbower00.github.io/wdd230/chamber/hero.jpg"
+    >
+    <link rel="icon" href="favicon.ico" >
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/larger.css" >
+    <title> Elgin Chamber of Commerce </title>
+  </head>
+  <body>
+    <header>
+        <button id="hamburger">&#9776;</button>
+        <div class="header-flex">
+            <a href="index.html" class="flex-container">
+                <img id="logo" src="images/sc.png" width="50" height="50" alt="South Carolina Palmetto Icon">
+                <h1>Elgin Chamber of Commerce</h1>
+            </a>
+            <nav class="flex-container">
+                <a class="#" href="index.html">Home</a>
+                <a class="here" href="discover.html">Discover</a>
+                <a href="#">Directory</a>
+                <a href="#">Join</a>
+            </nav>
+        </div>
+    </header>
+    <main class="discover-grid">
+        <aside class="sidebar">
+            <div class="card">
+                <h2 class="center-text">Next Event</h2>
+                <div class="card-padding">
+                    <h3>Weekly Chamber Meeting</h3>
+                    <p>Come on down and introduce yourself! We meet every week to discuss chamber business, plan events, and enjoy refreshments!</p>
+                    <p class="center-text"><strong>Town Hall, 3/15/2024 7:00 PM</strong></p>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Fun Fact!</h2>
+                <div class="card-padding">
+                    <p>"The roots for the present-day town of Elgin trace back to 1899-1900 when the Seaboard Coastline Railroad was making its way across the midlands of South Carolina."</p>
+                    <p>From: <a href="https://www.townofelginsc.com/about-elgin/">townofelginsc.com</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Visit Us!</h2>
+                <div class="card-padding">
+                    <!-- the below iframe tag was copied from google.com/maps (some adjustments made) -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13204.245560180496!2d-80.80584819309894!3d34.17034806979994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8ad2b8e3481d3%3A0x77e66b618a676aa3!2sElgin%2C%20SC!5e0!3m2!1sen!2sus!4v1710383276367!5m2!1sen!2sus" class="elgin-map" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </aside>
+        <div class="gallery">
+            <img class="gallery-img" height="525" width="700"  src="images/dirt-road-elgin.webp" alt="A beautiful sky at Elgin">
+            <img class="gallery-img" height="525" width="700"  src="images/pizza-place-elgin.webp" alt="A pizza place at Elgin">
+            <img class="gallery-img" height="525" width="700"  src="images/fog-woods-elgin.webp" alt="A woods at Elgin">
+            <img class="gallery-img" height="525" width="700"  src="images/bo-time-elgin.webp" alt="A Bojangles at Elgin">
+            <img class="gallery-img" height="525" width="700"  src="images/night-sky-elgin.webp" alt="A night's sky at Elgin">
+            <img class="gallery-img" height="525" width="700"  src="images/mexican-place-elgin.webp" alt="A mexican place at Elgin">
+        </div>
+    </main>
+    <footer>
+        <p><strong>Contact us:</strong> fakeemail@email.com <strong>or</strong> (123) 456-7890</p>
+        <p>Mitchell Bower | WDD 230 Web Frontend Development I</p>
+        <p>Last Modification: <span id="last-mod-val"></span></p>
+    </footer>
+    <script src="scripts/lastMod.js"></script>
+    <script src="scripts/changeSpotlight.js"></script>
+    <script src="scripts/toggleNav.js"></script>
+  </body>
+</html>
