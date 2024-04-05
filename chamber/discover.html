@@ -43,6 +43,12 @@
     <main class="discover-grid">
         <aside class="sidebar">
             <div class="card">
+                <h2 class="center-text">Hello!</h2>
+                <div class="card-padding">
+                    <p id="last-visit-text"></p>
+                </div>
+            </div>
+            <div class="card">
                 <h2 class="center-text">Next Event</h2>
                 <div class="card-padding">
                     <h3>Weekly Chamber Meeting</h3>
@@ -66,12 +72,30 @@
             </div>
         </aside>
         <div class="gallery">
-            <img class="gallery-img" height="525" width="700"  src="images/dirt-road-elgin.webp" alt="A beautiful sky at Elgin">
-            <img class="gallery-img" height="525" width="700"  src="images/pizza-place-elgin.webp" alt="A pizza place at Elgin">
-            <img class="gallery-img" height="525" width="700"  src="images/fog-woods-elgin.webp" alt="A woods at Elgin">
-            <img class="gallery-img" height="525" width="700"  src="images/bo-time-elgin.webp" alt="A Bojangles at Elgin">
-            <img class="gallery-img" height="525" width="700"  src="images/night-sky-elgin.webp" alt="A night's sky at Elgin">
-            <img class="gallery-img" height="525" width="700"  src="images/mexican-place-elgin.webp" alt="A mexican place at Elgin">
+            <div class="gallery-contatiner">
+                <div class="gallery-cap">A wooded dirt road under a beautiful sky in Elgin</div>
+                <img class="gallery-img" loading="lazy" height="525" width="700"  src="images/dirt-road-elgin.webp" alt="A beautiful sky at Elgin">
+            </div>
+            <div class="gallery-contatiner">
+                <div class="gallery-cap">Tony's Pizza Palace, local place to grab a slice!</div>
+                <img class="gallery-img" loading="lazy" height="525" width="700"  src="images/pizza-place-elgin.webp" alt="A pizza place at Elgin">
+            </div>
+            <div class="gallery-contatiner">
+                <div class="gallery-cap">Foggy woods scene in Elgin</div>
+                <img class="gallery-img" loading="lazy" height="525" width="700"  src="images/fog-woods-elgin.webp" alt="A woods at Elgin">
+            </div>
+            <div class="gallery-contatiner">
+                <div class="gallery-cap">Hanging at the local Bojangles</div>
+                <img class="gallery-img" loading="lazy" height="525" width="700"  src="images/bo-time-elgin.webp" alt="A Bojangles at Elgin">
+            </div>
+            <div class="gallery-contatiner">
+                <div class="gallery-cap">A starry night in Elgin</div>
+                <img class="gallery-img" loading="lazy" height="525" width="700"  src="images/night-sky-elgin.webp" alt="A night's sky at Elgin">
+            </div>
+            <div class="gallery-contatiner">
+                <div class="gallery-cap">Big and little brother at San Jose Mexican Restaurant</div>
+                <img class="gallery-img" loading="lazy" height="525" width="700"  src="images/mexican-place-elgin.webp" alt="A mexican place at Elgin">
+            </div>
         </div>
     </main>
     <footer>
@@ -80,7 +104,7 @@
         <p>Last Modification: <span id="last-mod-val"></span></p>
     </footer>
     <script src="scripts/lastMod.js"></script>
-    <script src="scripts/changeSpotlight.js"></script>
     <script src="scripts/toggleNav.js"></script>
+    <script src="scripts/lastVisit.js"></script>
   </body>
 </html>

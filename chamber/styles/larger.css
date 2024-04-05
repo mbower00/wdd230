@@ -14,6 +14,11 @@
     h2 {
         font-size: xx-large;
     }
+
+
+
+
+
     .discover-grid {
         display: grid;
         grid-template-columns: 2fr min-content;
@@ -21,10 +26,7 @@
         max-width: 1200px;
         width: 80vw;
     }
-    .gallery {
-        max-width: 700px;
-    }
-
+    
     .header-flex .flex-container h1 {
         font-size: xx-large;
     }
@@ -42,6 +44,25 @@
         flex-direction: row;
         margin-left: auto;
     }
+
+    .gallery {
+        max-width: 700px;
+    }
+    .gallery-img {
+        border: 1px ;
+        max-width: 700px;
+        width: 60vw;
+        filter: grayscale(85%);
+        transition: filter .175s ease-in;
+    }
+    .gallery-img:hover {
+        filter: grayscale(0%);
+    }
+
+
+
+
+
     #spotlight-card {
         grid-column-start: 1;
         grid-column-end: 6;
