@@ -10,7 +10,7 @@ window.localStorage.setItem("lastVisit", currentDate)
 
 let displayText = ""
 
-console.log(`nice ${currentDate} - ${lastVisitDate} (in days)= ${(currentDate - lastVisitDate) / 86400000}`)
+// console.log(`nice ${currentDate} - ${lastVisitDate} (in days)= ${(currentDate - lastVisitDate) / 86400000}`)
 
 if (lastVisitDate === null) {
     displayText = "Welcome! Let us know if you have any questions."
