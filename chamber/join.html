@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="This is the home for the Elgin Chamber of Commerce site."
+    >
+    <meta name="author" content="Mitchell Bower" >
+    <meta property="og:title" content="Elgin Chamber of Commerce" >
+    <meta property="og:type" content="website" >
+    <meta
+      property="og:url"
+      content="https://mbower00.github.io/wdd230/chamber"
+    >
+    <meta
+      property="og:image"
+      content="https://mbower00.github.io/wdd230/chamber/hero.jpg"
+    >
+    <link rel="icon" href="favicon.ico" >
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/larger.css" >
+    <title> Elgin Chamber of Commerce </title>
+  </head>
+  <body>
+    <header>
+        <button id="hamburger">&#9776;</button>
+        <div class="header-flex">
+            <a href="index.html" class="flex-container">
+                <img id="logo" src="images/sc.png" width="50" height="50" alt="South Carolina Palmetto Icon">
+                <h1>Elgin Chamber of Commerce</h1>
+            </a>
+            <nav class="flex-container">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="#">Directory</a>
+                <a class="here" href="join.html">Join</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div id="join-form-container" class="card">
+            <h2>Join!</h2>
+
+            <form id="join-form" method="get" action="thankyou.html">
+                
+                <label class="form-el space-below">
+                    <span class="bold">
+                        First name
+                    </span>
+                    <input type="text" name="first-name" id="first-name" required>
+                </label>
+                
+                <label class="form-el space-below">
+                    <span class="bold">
+                        Last name
+                    </span>
+                    <input type="text" name="last-name" id="last-name" required>
+                </label>
+                
+                <label class="form-el space-below">
+                    <span class="bold">
+                        Title/Position
+                    </span>
+                    <input type="text" name="title-position" id="title-position" pattern="[a-zA-Z\-\s]{7,}" required>
+                </label>
+                
+                <label class="form-el space-below">
+                    <span class="bold">
+                        Email
+                    </span>
+                    <input type="email" placeholder="example@gmail.com" name="email" id="email" required>
+                </label>
+                
+                <label class="form-el space-below">
+                    <span class="bold">
+                        Mobile phone number
+                    </span>
+                    <input type="tel" name="phone" id="phone" required>
+                </label>
+                
+                <label class="form-el space-below">
+                    <span class="bold text-right-large">
+                        Business/Organization name
+                    </span>
+                    <input type="text" name="org-name" id="buisness-org-name" required>
+                </label>
+                
+                <!-- https://www.w3schools.com/tags/att_input_type_radio.asp and https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio 
+                    were used to make the membership level section -->
+
+                <div class="bold">Membership level</div>
+                
+                <label class="radio">
+                    <input type="radio" name="membership" id="membership" value="np" required>
+                    Non-Profit (no fee)
+                </label>
+
+                <label class="radio">
+                    <input type="radio" name="membership" id="membership" value="bronze" required>
+                    Bronze
+                </label>
+
+                <label class="radio">
+                    <input type="radio" name="membership" id="membership" value="silver" required>
+                    Silver
+                </label>
+
+                <label class="radio space-below">
+                    <input type="radio" name="membership" id="membership" value="gold" required>
+                    Gold
+                </label>
+                
+                <label id="form-description-el">
+                    <span class="bold">
+                        Business/Organization description (optional)
+                    </span>
+                    <textarea name="description" id="description" ></textarea>
+                </label>
+                
+                <label class="form-el" id="form-timestamp-el">
+                    <input type="hidden" name="timestamp" id="timestamp" required>
+                </label>
+
+                <button class="submit-button" type="submit">Join Chamber</button>
+                
+            </form>
+
+        </div>
+
+
+
+        <div class="card">
+            <h2>Membership Benefits</h2>
+            <div class="benefits-desciption">
+                <h3 class="text-center">Non-Profit</h3>
+                <p class="bott-bordered-p"><span class="bold">$0.00/year</span> For <span class="bold">non-profit</span> organizations only, this gives organizations membership status in meetings and events. </p>
+                <h3 class="text-center">Bronze</h3>
+                <p class="bott-bordered-p"><span class="bold">$100.00/year</span> This gives organizations membership status in meetings and events as well an introduction in your first meeting and 20 complimentary business card printings. </p>
+                <h3 class="text-center">Silver</h3>
+                <p class="bott-bordered-p"><span class="bold">$300.00/year</span> While giving the benefits of a Bronze membership, this gives you a chance to host a meeting once a year in your organization. You will also get 5 mins in every meeting to give updates on your organization! </p>
+                <h3 class="text-center">Gold</h3>
+                <p><span class="bold">$500.00/year</span> While giving the benefits of a Bronze and Silver membership, this gives you a place on our homepage. Also, up to 5 members of your organization will be able to attend our yearly leadership seminar. </p>
+            </div>
+        </div>
+
+
+    </main>
+        
+        
+        
+    <footer>
+        <p><strong>Contact us:</strong> fakeemail@email.com <strong>or</strong> (123) 456-7890</p>
+        <p>Mitchell Bower | WDD 230 Web Frontend Development I</p>
+        <p>Last Modification: <span id="last-mod-val"></span></p>
+    </footer>
+    <script src="scripts/loadTimeStamp.js"></script>
+    <script src="scripts/lastMod.js"></script>
+    <script src="scripts/toggleNav.js"></script>
+  </body>
+</html>

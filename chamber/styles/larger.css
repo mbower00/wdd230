@@ -18,7 +18,8 @@
 
 
 
-
+    
+    
     .discover-grid {
         display: grid;
         grid-template-columns: 2fr min-content;
@@ -44,7 +45,7 @@
         flex-direction: row;
         margin-left: auto;
     }
-
+    
     .gallery {
         max-width: 700px;
     }
@@ -58,11 +59,29 @@
     .gallery-img:hover {
         filter: grayscale(0%);
     }
-
-
-
-
-
+    /*     
+    .text-right-large {
+        text-align: right;
+    }
+    .space-below {
+        margin-bottom: 10px;
+    }
+    .form-el {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .form-el span {
+        justify-self: right;
+    }
+    .form-el input {
+        justify-self: left;
+    }
+    .thankyou-gallery {
+        gap: 30px;
+    } */
+    /* #form-description-el {
+        margin-bottom: 0px;
+    } */
     #spotlight-card {
         grid-column-start: 1;
         grid-column-end: 6;
