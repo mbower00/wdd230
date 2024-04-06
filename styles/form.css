@@ -1,0 +1,39 @@
+.form {
+    margin: var(--largerGap) 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--medGap);
+    align-items: center;
+}
+
+form input {
+    padding: var(--smallGap);
+}
+
+form .left {
+    justify-self: left;
+}
+
+form .right {
+    justify-self: right;
+}
+
+form .center {
+    justify-self: center;
+}
+
+.both-cols {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+#repeat-password-message {
+    color: var(--errorRed);
+    margin: 0;
+    display: none;
+}
+
+#rating-display {
+    /* color: var(--yellow); */
+    font-weight: bold;
+}

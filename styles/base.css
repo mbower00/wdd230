@@ -1,6 +1,13 @@
 /* Copied line from fonts.google.com */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap");
 
+:root {
+  --smallGap: 5px;
+  --medGap: 10px;
+  --largeGap: 15px;
+  --largerGap: 20px;
+}
+
 /* ELEMENT */
 body {
   background-color: var(--dark);
@@ -17,6 +24,7 @@ body {
   --dark: #191919;
   --light: #3e3e3e;
   --text: #d0d0d0;
+  --errorRed: #f88;
 
   --darkNoChange: #191919;
   --lightNoChange: #3e3e3e;
@@ -27,6 +35,7 @@ body.light {
   --dark: #fff;
   --light: #b1b1b1;
   --text: #191919;
+  --errorRed: #b11;
 }
 
 picture img {
@@ -56,7 +65,7 @@ h1 {
 
 footer {
   margin-top: 45px;
-  padding: 0 20px;
+  padding: 0 var(--largerGap);
 }
 
 footer p {
@@ -65,7 +74,7 @@ footer p {
 
 header {
   background-color: var(--yellow);
-  padding: 15px 25px;
+  padding: var(--largeGap) 25px;
   color: var(--darkNoChange);
 }
 ul {
@@ -80,7 +89,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: var(--largerGap);
 }
 
 .profile-name {
@@ -90,12 +99,12 @@ ul {
 .card-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: var(--largerGap);
 }
 
 .profile-picture {
   border-radius: 100%;
-  border: 5px var(--darkNoChange) solid;
+  border: var(--smallGap) var(--darkNoChange) solid;
 }
 
 .card {
@@ -105,7 +114,7 @@ ul {
 .card h2 {
   text-align: center;
   margin: 0;
-  padding: 10px;
+  padding: var(--medGap);
   background-color: var(--light);
 }
 
@@ -130,7 +139,7 @@ ul {
   color: var(--text);
   background-color: var(--light);
   text-align: center;
-  padding: 5px;
+  padding: var(--smallGap);
 }
 .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.075);
@@ -153,7 +162,7 @@ ul {
   font-size: xx-large;
   position: absolute;
   top: 0px;
-  right: 5px; 
+  right: var(--smallGap); 
   cursor: pointer;
 }
 
@@ -164,7 +173,7 @@ ul {
   font-size: xx-large;
   position: absolute;
   top: 0px;
-  left: 5px;
+  left: var(--smallGap);
   cursor: pointer;
 }
 
@@ -175,15 +184,15 @@ ul {
 
 #hero-text {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: var(--medGap);
+  left: var(--medGap);
   font-size: small;
-  padding: 10px;
+  padding: var(--medGap);
   background-color: rgba(1, 1, 1, .8);
 }
 
 #elgin-map {
-  margin-top: 20px;
+  margin-top: var(--largerGap);
   width: 100%;
   height: auto;
 }
