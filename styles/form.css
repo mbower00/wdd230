@@ -1,25 +1,26 @@
 .form {
-    margin: var(--largerGap) 0;
+    padding: var(--largerGap) var(--smallGap);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: var(--medGap);
-    align-items: center;
 }
 
-form input {
+.form input {
     padding: var(--smallGap);
+    margin-bottom: var(--largeGap);
 }
 
-form .left {
-    justify-self: left;
-}
-
-form .right {
-    justify-self: right;
-}
-
-form .center {
+.form .left {
     justify-self: center;
+}
+
+.form .right {
+    justify-self: center;
+}
+
+.form .center {
+    justify-self: center;
+    text-align: center;
 }
 
 .both-cols {
@@ -29,7 +30,7 @@ form .center {
 
 #repeat-password-message {
     color: var(--errorRed);
-    margin: 0;
+    margin-bottom: var(--largeGap);
     display: none;
 }
 

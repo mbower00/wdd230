@@ -31,6 +31,23 @@
     display: flex;
   }
 
+  .form {
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form input {
+    margin: 0;
+  }
+  .form .left {
+    justify-self: left;
+  }
+  .form .right {
+    justify-self: right;
+  }
+  #repeat-password-message {
+    margin: 0;
+  }
+
   #hamburger {
     display: none;
   }
