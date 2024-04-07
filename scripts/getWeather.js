@@ -12,7 +12,7 @@ async function getWeather() {
     const response = await fetch(URL)
     const data = await response.json()
     
-    console.log(data)
+    // console.log(data)
 
     const weather = data.weather[0]
     conditionEl.textContent = weather.description
