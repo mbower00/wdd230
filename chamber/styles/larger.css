@@ -59,6 +59,9 @@
     .gallery-img:hover {
         filter: grayscale(0%);
     }
+    .list-line-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     /*     
     .text-right-large {
         text-align: right;
@@ -82,6 +85,16 @@
     /* #form-description-el {
         margin-bottom: 0px;
     } */
+
+    #members-selection {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #members-view .one-col {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
     #spotlight-card {
         grid-column-start: 1;
         grid-column-end: 6;

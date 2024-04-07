@@ -170,6 +170,7 @@ textarea{
     border-bottom: var(--yellow) 2px solid;
     padding: 15px 0;
 }
+
 .text-center {
     text-align: center;
 }
@@ -332,9 +333,80 @@ textarea{
 .submit-button:active {
     box-shadow: none;
 }
+.inner-padding {
+    padding: 0 15px 0 15px;
+}
+.category-marker{
+    padding: 5px;
+    border-radius: 20px;
+    border: var(--grey) 3px solid;
+    background-color: var(--grey);
+    color: var(--textLight);
+}
+.member-logo {
+    max-width: 150px;
+}
+.member-logo-container {
+    display: grid;
+    justify-items: center;
+}
+.list-line-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: var(--yellow) 2px solid;
+    margin-bottom: 20px;
+    font-size: large;
+}
 /** IDS */
 
+#members-view .one-col {
+grid-template-columns: 1fr;
+gap: 0;
+}
+#directory-view-toggle-container {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
 
+
+#members-view {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+#members-view,.card {
+    display: block;
+}
+
+#members-selection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+#members-selection h2 {
+    display: block;
+}
+
+
+#directory-view-toggle-container span {
+    font-size: larger;
+    border: var(--blue) 5px solid;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, .6) 2px 2px 10px;
+    cursor: pointer;
+}
+#directory-view-toggle-container .selected {
+    background-color: var(--blue);
+    color: var(--textLight);
+}
 /* #form-description-el span {
     text-align: center;
 } */
