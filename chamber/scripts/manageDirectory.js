@@ -1,3 +1,6 @@
+// The logos in ./images/members/ are from the business site
+// The data is in ./data/members.json is from google maps
+
 const membersViewEl = document.getElementById("members-view")
 const membersSelectionEl = document.getElementById("members-selection")
 const gridOptionEl = document.getElementById("grid-option")
