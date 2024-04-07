@@ -40,6 +40,10 @@
             </nav>
         </div>
     </header>
+    <div id="meeting-banner">
+        Users and visitors! We invite you to attend the Elgin Chamber of Commerce meet and greet. It will be Wednesday at 7:00 p.m.
+        <div id="x">X</div>
+    </div>
     <div id="hero-container">
         <div id="hero-text">
             <h1>Grow with us today!</h1>
@@ -55,39 +59,6 @@
         <section class="card" id="spotlight-card">
             <h2>Business Spotlight</h2>
             <div id="spotlight-container">
-                <div class="flex-container spotlight shown">
-                    <img class="spotlight-img" width="200" height="200" src="images/mex.jpg" alt="mexican food">
-                    <div class="business-info">
-                        <div class="spotlight-title flex-container">
-                            <img class="business-logo" src="images/mexlogo.jpg" alt="logo of a mexican restaurant">
-                            <h3>Juan's Mexican Restaurant</h3>
-                        </div>
-                        <p>Hola! This mexican restaurant is sure to be your new favorite here in Elgin! With Chef Juan in charge, we are sure that you will leave happy!</p>
-                        <a href="#" class="visit-link color-link">Visit</a>
-                    </div>
-                </div>
-                <div class="flex-container spotlight">
-                    <img class="spotlight-img" width="200" height="200" src="images/law.jpg" alt="books">
-                    <div class="business-info">
-                        <div class="spotlight-title flex-container">
-                            <img class="business-logo" src="images/lawlogo.jpg" alt="logo for a law firm">
-                            <h3>Mike, Mike, and Mike Law Firm</h3>
-                        </div>
-                        <p>So you found yourself in some trouble? The Mikes can help you get treated fairly in court! With 30 years of experience, we are sure to give you the service you need.</p>
-                        <a href="#" class="visit-link color-link">Visit</a>
-                    </div>
-                </div>
-                <div class="flex-container spotlight">
-                    <img class="spotlight-img" width="200" height="200" src="images/pizza.jpg" alt="pizza">
-                    <div class="business-info">
-                        <div class="spotlight-title flex-container">
-                            <img class="business-logo" src="images/pizzalogo.jpg" alt="logo of a pizza restaurant">
-                            <h3>Joe's Pizzas</h3>
-                        </div>
-                        <p>Hello! This pizza shop is sure to be your next favorite. Voted best family restaurant in Elgin, we always have something for anyone!</p>
-                        <a href="#" class="visit-link color-link">Visit</a>
-                    </div>
-                </div>
             </div>
             <div class="flex-container center spotlight-nav">
                 <a id="back-spotlight" class="color-link">&#9668;</a>
@@ -99,31 +70,31 @@
             <h2>Upcoming Events</h2>
             <div class="event-container">
                 <div class="flex-container">
-                    <img class="business-logo" src="images/sc.png" alt="South Carolina Palmetto Icon">
+                    <img src="images/sc.png" class="small-member-logo rounded" alt="event-logo">
                     <div>
 
                         <h3 class="event-title">Weekly Chamber Meeting</h3>
                         <div class="simple-flex">
 
                             <p>Town Hall</p>
-                            <p>02/04/2024 3:20</p>
+                            <p>04/10/2024 7:00</p>
                         </div>
                     </div>
                 </div>
                 <div class="flex-container">
-                    <img class="business-logo" src="images/lawlogo.jpg" alt="logo of a law firm">
+                    <img src="images/members/oreillylogo.png" class="small-member-logo alt="event-logo">
                     <div>
 
-                        <h3 class="event-title">Meet Our New Attorney!</h3>
+                        <h3 class="event-title">Free Check-Up Raffle</h3>
                         <div class="simple-flex">
 
-                            <p>M&M&M Law Firm</p>
+                            <p>O'Reilly Auto Parts</p>
                             <p>02/05/2024 7:20</p>
                         </div>
                     </div>
                 </div>
                 <div class="flex-container">
-                    <img class="business-logo" src="images/sc.png" alt="South Carolina Palmetto Icon">
+                    <img src="images/sc.png" class="small-member-logo rounded" alt="event-logo">
                     <div>
 
                         <h3 class="event-title">Chamber Potluck Dinner</h3>
@@ -135,31 +106,29 @@
                     </div>
                 </div>
                 <div class="flex-container">
-                    <img class="business-logo" src="images/pizzalogo.jpg" alt="logo of a pizza restaurant">
+                    <img src="images/members/foodlionlogo.png" class="small-member-logo alt="event-logo">
                     <div>
 
                         <h3 class="event-title">Free Sample Day!</h3>
                         <div class="simple-flex">
-
-                            <p>Joe's Pizzas</p>
+                            <p>Food Lion</p>
                             <p>02/07/2024 9:20</p>
                         </div>
                     </div>
                 </div>
                 <div class="flex-container">
-                    <img class="business-logo" src="images/mexlogo.jpg" alt="logo of mexican restaurant">
+                    <img src="images/members/sanjoselogo.png" class="small-member-logo alt="event-logo">
                     <div>
 
-                        <h3 class="event-title">Free Chip Day!</h3>
+                        <h3 class="event-title">Free Chips and Queso Day!</h3>
                         <div class="simple-flex">
-
-                            <p>Juan's Mexican Restaurant</p>
+                            <p>San Jose Mexican Restaurant</p>
                             <p>02/08/2024 3:20</p>
                         </div>
                     </div>
                 </div>
                 <div class="flex-container">
-                    <img class="business-logo" src="images/sc.png" alt="South Carolina Palmetto Icon">
+                    <img src="images/sc.png" class="small-member-logo rounded" alt="event-logo">
                     <div>
 
                         <h3 class="event-title">Family Meet-And-Greet</h3>
@@ -175,19 +144,49 @@
         <section class="card" id="weather-card">
             <h2>Weather</h2>
             <div class="flex-container center">
-                <span class="weather-icon">🌞</span>
+                <img class="weather-icon" id="weather-current-icon" alt="Icon representing weather in Elgin">
                 <div class="weather-info">
                     <h3>Elgin, SC</h3>
-                    <p>75&deg;F</p>
-                    <p>Sunny and Happy!</p>
+                    <p><span id="weather-current-temp"></span>&deg;F</p>
+                    <p id="weather-current-description">Sunny and Happy!</p>
                 </div>
             </div>
+                <div class="inner-padding text-center">
+                    <h3 class="med-margin">Forecast</h3>
+                    <h4 class="small-margin">
+                        <span id="d1-day"></span> (<span id="d1-time"></span>)
+                    </h4>
+                    <p class="small-margin">
+                        <div class="small-flex-weather">
+                            <img id="d1-icon" class="small-weather-icon" alt="Icon showing a weather forecast">
+                            <span id="d1-temp"></span>
+                        </div>
+                        <span id="d1-description"></span>
+                    </p>
+                    <h4 class="small-margin">
+                        <span id="d2-day"></span> (<span id="d2-time"></span>)
+                    </h4>
+                    <p class="small-margin">
+                        <div class="small-flex-weather">
+                            <img id="d2-icon" class="small-weather-icon" alt="Icon showing a weather forecast">
+                            <span id="d2-temp"></span>
+                        </div>
+                        <span id="d2-description"></span>
+                    </p>
+                    <h4 class="small-margin">
+                        <span id="d3-day"></span> (<span id="d3-time"></span>)
+                    </h4>
+                    <p class="small-margin">
+                        <div class="small-flex-weather">
+                            <img id="d3-icon" class="small-weather-icon" alt="Icon showing a weather forecast">
+                            <span id="d3-temp"></span>
+                        </div>
+                        <span id="d3-description"></span>
+                    </p>
+                </div>
         </section>
     </main>
     <div id="business-logos">
-        <img class="business-logo" src="images/mexlogo.jpg" alt="logo of a mexican restaurant">
-        <img class="business-logo" src="images/lawlogo.jpg" alt="logo of a law firm">
-        <img class="business-logo" src="images/pizzalogo.jpg" alt="logo of a pizza restaurant">
     </div>
     <footer>
         <p><strong>Contact us:</strong> fakeemail@email.com <strong>or</strong> (123) 456-7890</p>
@@ -195,7 +194,10 @@
         <p>Last Modification: <span id="last-mod-val"></span></p>
     </footer>
     <script src="scripts/lastMod.js"></script>
+    <script src="scripts/populateSpotlight.js"></script>
     <script src="scripts/changeSpotlight.js"></script>
     <script src="scripts/toggleNav.js"></script>
+    <script src="scripts/getWeather.js"></script>
+    <script src="scripts/manageBanner.js"></script>
   </body>
 </html>

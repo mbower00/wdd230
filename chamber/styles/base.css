@@ -94,6 +94,7 @@ textarea{
     display: grid;
     grid-template-columns: 1;
     gap: 30px;
+    justify-items: center;
 }
 
 .gallery {
@@ -101,11 +102,13 @@ textarea{
     gap: 30px;
     grid-template-columns: 1fr;
     width: 100%;
+    justify-items: center;
 }
 
 
 .gallery-contatiner {
     position: relative;
+    max-width: 700px;
 }
 
 .gallery-cap {
@@ -123,6 +126,7 @@ textarea{
     box-shadow: rgba(0, 0, 0, .6) 2px 2px 10px;
     width: 100%;
     height: auto;
+    max-width: 700px;
 }
 .thankyou-gallery {
     grid-column-start: 1;
@@ -181,7 +185,7 @@ textarea{
 }
 .event-container{
     padding: 0 15px;
-    max-height: 300px;
+    max-height: 400px;
     overflow-y: scroll;
 }
 .event-container .business-logo{
@@ -189,7 +193,12 @@ textarea{
     height: calc(var(--logo-size) - 15px);
 }
 .business-info{
-    padding: 15px
+    padding: 15px;
+    width: 100%;
+}
+.business-info h3 {
+    text-align: center;
+
 }
 .visit-link {
     display: block;
@@ -343,12 +352,43 @@ textarea{
     background-color: var(--grey);
     color: var(--textLight);
 }
+.rounded {
+    border-radius: 100%;
+}
 .member-logo {
     max-width: 150px;
+}
+.small-member-logo {
+    max-width: 50px;
+}
+#meeting-banner {
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--grey);
+    color: var(--textLight);
+    padding: 20px 30px 20px 30px;
+    margin: 0;
+    position: relative;
 }
 .member-logo-container {
     display: grid;
     justify-items: center;
+}
+.small-flex-weather {
+    display: flex;
+    align-items: center;
+    width: min-content;
+    margin: 0 auto;
+    gap: 5px;
+}
+.small-margin {
+    margin: 10px 0 10px 0;
+}
+.med-margin {
+    margin: 20px 0 20px 0;
+}
+.small-weather-icon {
+    width: 40px;
 }
 .list-line-container {
     display: grid;
@@ -361,9 +401,29 @@ textarea{
 }
 /** IDS */
 
+#meeting-banner {
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--grey);
+    color: var(--textLight);
+    padding: 20px 30px 20px 30px;
+    margin: 0;
+    position: relative;
+    display: none;
+}
+#x {
+    position: absolute;
+    right: 5px;
+    top : 5px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--textLight);
+    padding: 5px;
+    cursor: pointer;
+}
 #members-view .one-col {
-grid-template-columns: 1fr;
-gap: 0;
+    grid-template-columns: 1fr;
+    gap: 0;
 }
 #directory-view-toggle-container {
     grid-column-start: 1;
@@ -487,10 +547,12 @@ gap: 0;
     }
 }
 #business-logos {
-    display: flex;
-    justify-content: center;
-    gap: 10vw;
-    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 65vw;
     margin: 0 auto 30px auto;
 }
 

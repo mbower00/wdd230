@@ -62,6 +62,9 @@
     .list-line-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    .small-member-logo {
+        max-width: 79px;
+    }
     /*     
     .text-right-large {
         text-align: right;
@@ -85,7 +88,10 @@
     /* #form-description-el {
         margin-bottom: 0px;
     } */
-
+    #business-logos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
     #members-selection {
         grid-template-columns: 1fr 1fr;
     }
