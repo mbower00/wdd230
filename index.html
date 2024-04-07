@@ -66,10 +66,19 @@
         </section>
         <section class="card">
           <h2>Information</h2>
-          <p class="information-piece">Rexburg, Idaho</p>
-          <p class="information-piece">❄ -1&deg;F - Snowing</p>
-          <p class="information-piece">Page Visits : <span id="visit-display"></span></p>
-        </section>
+          <div class="padding">
+
+            <p class="information-piece">Rexburg, Idaho</p>
+            <p class="information-piece">
+              <div class="temp-and-icon">
+                <img id="weather-icon" alt="Icon representing the weather condition in Rexburg.">
+                <span id="weather-temp"></span> 
+              </div>
+              <p class="text-center" id="weather-condition"></p>
+            </p>
+            <p class="information-piece">Page Visits : <span id="visit-display"></span></p>
+          </div>
+          </section>
       </div>
       <!-- iframe from google.com/maps (some adjustments made)-->
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26408.491524183002!2d-80.81614807746162!3d34.1703467791761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8ad2b8e3481d3%3A0x77e66b618a676aa3!2sElgin%2C%20SC!5e0!3m2!1sen!2sus!4v1710199246314!5m2!1sen!2sus" width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="elgin-map"></iframe>
@@ -87,5 +96,6 @@
     <script src="scripts/getVisits.js"></script>
     <script src="scripts/toggleNav.js"></script>
     <script src="scripts/toggleLight.js"></script>
+    <script src="scripts/getWeather.js"></script>
   </body>
 </html>

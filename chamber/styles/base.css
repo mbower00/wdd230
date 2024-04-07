@@ -80,6 +80,7 @@ footer{
     text-align: center;
     margin: 0;
 }
+/* from https://www.w3schools.com/howto/howto_css_disable_resize_textarea.asp */
 textarea{
     resize: none;
 }

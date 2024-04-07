@@ -29,9 +29,12 @@ body {
   --darkNoChange: #191919;
   --lightNoChange: #3e3e3e;
   --textNoChange: #d0d0d0;
+
+  --translucentDarkBackground: rgba(1, 1, 1, .8);
 }
 
 body.light {
+  --translucentDarkBackground: rgba(255, 255, 255, .9);
   --dark: #fff;
   --light: #b1b1b1;
   --text: #191919;
@@ -91,11 +94,24 @@ ul {
   justify-content: center;
   gap: var(--largerGap);
 }
-
+.temp-and-icon {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--smallGap);
+}
+.temp-and-icon img {
+  justify-self: right;
+}
+.text-center{
+  text-align: center;
+}
 .profile-name {
   font-size: 40px;
 }
-
+.padding {
+  padding: 0 15px;
+}
 .card-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -165,7 +181,12 @@ ul {
   right: var(--smallGap); 
   cursor: pointer;
 }
-
+#weather-icon {
+  width: 30px;
+}
+#weather-condition {
+  margin-top: 0;
+}
 #lightToggle {
   border: none;
   background-color: rgba(0, 0, 0, 0);
@@ -188,7 +209,7 @@ ul {
   left: var(--medGap);
   font-size: small;
   padding: var(--medGap);
-  background-color: rgba(1, 1, 1, .8);
+  background-color: var(--translucentDarkBackground);
 }
 
 #elgin-map {
