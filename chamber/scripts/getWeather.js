@@ -78,25 +78,38 @@ async function getWeather() {
 
     const responseForecastWeather = await fetch(forecastURL)
     const dataForecastWeather = await responseForecastWeather.json()
-    const forecast = dataForecastWeather.list
+    let forecast = dataForecastWeather.list
 
     // console.log(dataForecastWeather)
 
-    const oneDayForecast = forecast[5]
+    // console.log(forecast)
+    forecast = forecast.filter((f) => {
+        const dt = f.dt_txt
+        if (new Date(dt).getDay() === new Date().getDay()) { // must not be today
+            return false
+        } else if (new Date(dt).getHours() != 12) { // must not be anything but 12
+            return false
+        } else {
+            return true
+        }
+    })
+    
+
+    const oneDayForecast = forecast[0]
     const oneDayTemp = oneDayForecast.main.temp
     const oneDayDescription = oneDayForecast.weather[0].description
     const oneDayIcon = oneDayForecast.weather[0].icon
     const oneDayDay = dayFromDate(oneDayForecast.dt_txt)
     const oneDayTime = timeFromDate(oneDayForecast.dt_txt)
 
-    const twoDayForecast = forecast[13]
+    const twoDayForecast = forecast[1]
     const twoDayTemp = twoDayForecast.main.temp
     const twoDayDescription = twoDayForecast.weather[0].description
     const twoDayIcon = twoDayForecast.weather[0].icon
     const twoDayDay = dayFromDate(twoDayForecast.dt_txt)
     const twoDayTime = timeFromDate(twoDayForecast.dt_txt)
 
-    const threeDayForecast = forecast[21]
+    const threeDayForecast = forecast[2]
     const threeDayTemp = threeDayForecast.main.temp
     const threeDayDescription = threeDayForecast.weather[0].description
     const threeDayIcon = threeDayForecast.weather[0].icon
