@@ -63,7 +63,7 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .small-member-logo {
-        max-width: 79px;
+        max-width: 78px;
     }
     /*     
     .text-right-large {
@@ -116,4 +116,14 @@
     #hamburger {
         display: none;
     }
+    #hero-action {
+        right: 25%;
+        top: 33%;
+    }
+    #hero-text {
+        left: 25%;
+        top: 28%;
+
+    }
+
 }

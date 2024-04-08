@@ -5,7 +5,7 @@
             "address":"2480 Main St, Elgin, SC 29045",
             "phone":"+18034328521",
             "url":"https://www.midcarolinacu.com/",
-            "img":"mccu-logo.png",
+            "img":"mccu-logo.webp",
             "membership":"Gold",
             "category":"Finance"
         },
@@ -14,7 +14,7 @@
             "address":"2463 Main St, Elgin, SC 29045",
             "phone":"+18034388994",
             "url":"https://www.autozone.com/locations/sc/elgin/2463-main-st.html?cmpid=LOC:US:EN:AD:NL:1000000:GEN:3831",
-            "img":"autozonelogo.png",
+            "img":"autozonelogo.webp",
             "membership":"Bronze",
             "category":"Car"
         },
@@ -32,7 +32,7 @@
             "address":"2465 Main St, Elgin, SC 29045",
             "phone":"+18034381613",
             "url":"https://stores.foodlion.com/sc/elgin/2465-main-street?y_source=1_NTA0NzAwOC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
-            "img":"foodlionlogo.png",
+            "img":"foodlionlogo.webp",
             "membership":"Silver",
             "category":"Store"
         },
@@ -41,7 +41,7 @@
             "address":"1400 Blaney Rd, Elgin, SC 29045",
             "phone":"+18034383161",
             "url":"https://www.blaneybaptist.com/",
-            "img":"bbchurchlogo.png",
+            "img":"bbchurchlogo.webp",
             "membership":"Gold",
             "category":"Church"
         },
@@ -50,7 +50,7 @@
             "address":"1310 White Pond Rd, Elgin, SC 29045",
             "phone":"+18034082757",
             "url":"http://sanjosemex.com/",
-            "img":"sanjoselogo.png",
+            "img":"sanjoselogo.webp",
             "membership":"Silver",
             "category":"Food"
         },
@@ -59,7 +59,7 @@
             "address":"1109 Church St, Elgin, SC 29045",
             "phone":"+18032724177",
             "url":"https://locations.oreillyauto.com/sc/elgin/autoparts-5129.html",
-            "img":"oreillylogo.png",
+            "img":"oreillylogo.webp",
             "membership":"Bronze",
             "category":"Car"
         }

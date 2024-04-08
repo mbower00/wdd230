@@ -361,15 +361,6 @@ textarea{
 .small-member-logo {
     max-width: 50px;
 }
-#meeting-banner {
-    text-align: center;
-    font-weight: bold;
-    background-color: var(--grey);
-    color: var(--textLight);
-    padding: 20px 30px 20px 30px;
-    margin: 0;
-    position: relative;
-}
 .member-logo-container {
     display: grid;
     justify-items: center;
@@ -506,22 +497,34 @@ textarea{
 }
 #hero {
     width: 100%;
+    max-width: 1920px;
+}
+#hero-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
 }
 #hero-text {
-    left: 19vw;
-    margin-top: 4%;
+    left: 10%;
+    /* margin-top: 4%; */
+    top: 41%;
     position: absolute;
     width: 20vw;
+    max-width: 370px;
 }
 #hero-text h1 {
+    /* max-width: 370px; */
     font-size: 5vw;
     margin: 0;
 }
 #hero-action {
     position: absolute;
     text-decoration: none;
-    right: 20vw;
-    margin-top: 8%;
+    right: 10%;
+    top: 39%;
+    max-width: 260px;
+    /* margin-top: 8%; */
     color: var(--textLight);
     font-size: 5vw;
     background-color: var(--blue);
